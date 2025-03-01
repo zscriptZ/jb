@@ -1,0 +1,100 @@
+/* Global Style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #f1f1f1;
+}
+
+/* Logo Bulat di index.html */
+.logo-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    margin-right: 15px;
+}
+
+/* Link Sosial di index.html */
+.social-links .btn {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 5px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Card (Stok Akun & Produk) */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Carousel di akun.html */
+.carousel-inner img {
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Testimoni */
+.testimoni {
+    margin-bottom: 20px;
+}
+
+.testimoni img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Watermark di Testimoni */
+.watermark {
+    position: relative;
+}
+
+.watermark::after {
+    content: "PARELAXZ STORE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.3;
+    text-shadow: 2px 2px 4px black;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .nav-link {
+        margin-right: 5px;
+    }
+
+    .logo-circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .watermark::after {
+        font-size: 18px;
+    }
+}
